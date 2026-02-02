@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Experiment 2 - Full Stack</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Full Stack Experiments</h1>
+
+    <label>Select Experiment:</label>
+    <select onchange="openExperiment(this.value)">
+        <option value="">-- Select Experiment --</option>
+        <option value="charCounter">Live Character Counter</option>
+        <option value="productFilter">Product Filter</option>
+    </select>
+
+    <!-- EXPERIMENT 1 -->
+    <div id="charCounter" class="experiment">
+        <h2>Live Character Counter</h2>
+        <textarea id="textInput" placeholder="Type here..." onkeyup="countChars()"></textarea>
+        <p>Total Characters: <b><span id="charCount">0</span></b></p>
+    </div>
+
+    <!-- EXPERIMENT 2 -->
+    <div id="productFilter" class="experiment">
+        <h2>Product Filter</h2>
+
+        <input type="text" id="searchBox" placeholder="Search product..." onkeyup="filterProducts()">
+
+        <ul id="productList">
+            <li onclick="showDetails('Mobile', '₹15,000')">Mobile</li>
+            <li onclick="showDetails('Laptop', '₹55,000')">Laptop</li>
+            <li onclick="showDetails('Headphones', '₹2,000')">Headphones</li>
+            <li onclick="showDetails('Keyboard', '₹1,200')">Keyboard</li>
+            <li onclick="showDetails('Mouse', '₹800')">Mouse</li>
+        </ul>
+
+        <div id="detailsBox">
+            <p><b>Product:</b> <span id="pName">-</span></p>
+            <p><b>Price:</b> <span id="pPrice">-</span></p>
+        </div>
+    </div>
+
+    <footer>
+        Experiment 2 | Full Stack Submission
+    </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+

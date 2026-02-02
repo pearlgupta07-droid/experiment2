@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f4f7;
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    background: #fff;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 6px;
+}
+
+h1 {
+    text-align: center;
+}
+
+select, input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+}
+
+textarea {
+    height: 100px;
+}
+
+.experiment {
+    display: none;
+    margin-top: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+li:hover {
+    background: #eef4ff;
+}
+
+#detailsBox {
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: gray;
+}
+
